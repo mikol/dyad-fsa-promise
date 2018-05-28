@@ -1,6 +1,6 @@
 {
   "name": "dyad-fsa-promise",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Dyad promise middleware with Flux Standard Action support",
   "main": "dyad-fsa-promise.js",
   "scripts": {
