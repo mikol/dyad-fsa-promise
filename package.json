@@ -30,7 +30,6 @@
   },
   "homepage": "https://github.com/mikol/dyad-fsa-promise#readme",
   "dependencies": {
-    "dyad": "git+https://github.com/mikol/dyad.git",
     "flux-standard-action": "^2.0.3"
   },
   "devDependencies": {
@@ -38,6 +37,7 @@
     "@types/mocha": "^5.2.0",
     "@types/sinon": "^5.0.0",
     "chai": "^4.1.2",
+    "dyad": "0.0.3",
     "mocha": "^5.2.0",
     "sinon": "^5.0.10",
     "ts-node": "^6.0.5",
