@@ -9,10 +9,18 @@ npm install dyad-fsa-promise
 ## Usage
 
 ```js
-import * as Dyad from 'dyad'
-import middleware from 'dyad-fsa-promise'
+const Dyad = require('dyad')
+const {middleware} = require('dyad-fsa-promise')
 
 const store = Dyad.getInstance()
 
 store.use(middleware)
+
+store.bind({
+  ACTION_TYPE: (_, __, action) => console.log(action.payload)
+})
+
+store.dispatch({type: 'ACTION_TYPE', payload: Promise.resolve('Hello, World!')})
+
+// Logs 'Hello, World!'
 ```

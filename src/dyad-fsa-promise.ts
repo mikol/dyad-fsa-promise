@@ -3,7 +3,7 @@ import {isFSA} from 'flux-standard-action'
 
 const store = Dyad.getInstance()
 
-export default function middleware(action: any, next: Dyad.Dispatch): any {
+export function middleware(action: any, next: Dyad.Dispatch): any {
   if (isFSA(action)) {
     const _payload: any = action.payload
 

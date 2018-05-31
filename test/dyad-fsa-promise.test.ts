@@ -2,7 +2,7 @@ import {expect} from 'chai'
 import * as Dyad from 'dyad'
 import * as sinon from 'sinon'
 
-import middleware from '../src/dyad-fsa-promise'
+import {middleware} from '../src/dyad-fsa-promise'
 
 const spy = sinon.spy(middleware)
 const store = Dyad.getInstance()

@@ -28,4 +28,4 @@ function middleware(action, next) {
         ? action.then(function (x) { return store.dispatch(x); })
         : next(action);
 }
-exports.default = middleware;
+exports.middleware = middleware;

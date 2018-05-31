@@ -1,2 +1,2 @@
 import * as Dyad from 'dyad';
-export default function middleware(action: any, next: Dyad.Dispatch): any;
+export declare function middleware(action: any, next: Dyad.Dispatch): any;
